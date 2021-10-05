@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
+		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
+		65E9E1EB270C301A00DDEADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1EA270C301A00DDEADC /* ViewController.swift */; };
+		65E9E1EE270C301A00DDEADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EC270C301A00DDEADC /* Main.storyboard */; };
+		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
+		65E9E1F3270C301B00DDEADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1F1270C301B00DDEADC /* LaunchScreen.storyboard */; };
+		65E9E1FE270C301B00DDEADC /* Hahow_iOS_RecruitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1FD270C301B00DDEADC /* Hahow_iOS_RecruitTests.swift */; };
+		65E9E209270C301B00DDEADC /* Hahow_iOS_RecruitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E208270C301B00DDEADC /* Hahow_iOS_RecruitUITests.swift */; };
+		65E9E217270C307D00DDEADC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E216270C307D00DDEADC /* data.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65E9E1FA270C301B00DDEADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E9E1DB270C301A00DDEADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65E9E1E2270C301A00DDEADC;
+			remoteInfo = "Hahow-iOS-Recruit";
+		};
+		65E9E205270C301B00DDEADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E9E1DB270C301A00DDEADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65E9E1E2270C301A00DDEADC;
+			remoteInfo = "Hahow-iOS-Recruit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		65E9E1EA270C301A00DDEADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65E9E1ED270C301A00DDEADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65E9E1EF270C301B00DDEADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65E9E1F2270C301B00DDEADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65E9E1F4270C301B00DDEADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E9E1F9270C301B00DDEADC /* Hahow-iOS-RecruitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hahow-iOS-RecruitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E9E1FD270C301B00DDEADC /* Hahow_iOS_RecruitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hahow_iOS_RecruitTests.swift; sourceTree = "<group>"; };
+		65E9E1FF270C301B00DDEADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E9E204270C301B00DDEADC /* Hahow-iOS-RecruitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hahow-iOS-RecruitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E9E208270C301B00DDEADC /* Hahow_iOS_RecruitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hahow_iOS_RecruitUITests.swift; sourceTree = "<group>"; };
+		65E9E20A270C301B00DDEADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E9E216270C307D00DDEADC /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65E9E1E0270C301A00DDEADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E9E1F6270C301B00DDEADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E9E201270C301B00DDEADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65E9E1DA270C301A00DDEADC = {
+			isa = PBXGroup;
+			children = (
+				65E9E1E5270C301A00DDEADC /* Hahow-iOS-Recruit */,
+				65E9E1FC270C301B00DDEADC /* Hahow-iOS-RecruitTests */,
+				65E9E207270C301B00DDEADC /* Hahow-iOS-RecruitUITests */,
+				65E9E1E4270C301A00DDEADC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65E9E1E4270C301A00DDEADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */,
+				65E9E1F9270C301B00DDEADC /* Hahow-iOS-RecruitTests.xctest */,
+				65E9E204270C301B00DDEADC /* Hahow-iOS-RecruitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65E9E1E5270C301A00DDEADC /* Hahow-iOS-Recruit */ = {
+			isa = PBXGroup;
+			children = (
+				65E9E216270C307D00DDEADC /* data.json */,
+				65E9E1E6270C301A00DDEADC /* AppDelegate.swift */,
+				65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */,
+				65E9E1EA270C301A00DDEADC /* ViewController.swift */,
+				65E9E1EC270C301A00DDEADC /* Main.storyboard */,
+				65E9E1EF270C301B00DDEADC /* Assets.xcassets */,
+				65E9E1F1270C301B00DDEADC /* LaunchScreen.storyboard */,
+				65E9E1F4270C301B00DDEADC /* Info.plist */,
+			);
+			path = "Hahow-iOS-Recruit";
+			sourceTree = "<group>";
+		};
+		65E9E1FC270C301B00DDEADC /* Hahow-iOS-RecruitTests */ = {
+			isa = PBXGroup;
+			children = (
+				65E9E1FD270C301B00DDEADC /* Hahow_iOS_RecruitTests.swift */,
+				65E9E1FF270C301B00DDEADC /* Info.plist */,
+			);
+			path = "Hahow-iOS-RecruitTests";
+			sourceTree = "<group>";
+		};
+		65E9E207270C301B00DDEADC /* Hahow-iOS-RecruitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65E9E208270C301B00DDEADC /* Hahow_iOS_RecruitUITests.swift */,
+				65E9E20A270C301B00DDEADC /* Info.plist */,
+			);
+			path = "Hahow-iOS-RecruitUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65E9E1E2270C301A00DDEADC /* Hahow-iOS-Recruit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E9E20D270C301B00DDEADC /* Build configuration list for PBXNativeTarget "Hahow-iOS-Recruit" */;
+			buildPhases = (
+				65E9E1DF270C301A00DDEADC /* Sources */,
+				65E9E1E0270C301A00DDEADC /* Frameworks */,
+				65E9E1E1270C301A00DDEADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hahow-iOS-Recruit";
+			productName = "Hahow-iOS-Recruit";
+			productReference = 65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65E9E1F8270C301B00DDEADC /* Hahow-iOS-RecruitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E9E210270C301B00DDEADC /* Build configuration list for PBXNativeTarget "Hahow-iOS-RecruitTests" */;
+			buildPhases = (
+				65E9E1F5270C301B00DDEADC /* Sources */,
+				65E9E1F6270C301B00DDEADC /* Frameworks */,
+				65E9E1F7270C301B00DDEADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65E9E1FB270C301B00DDEADC /* PBXTargetDependency */,
+			);
+			name = "Hahow-iOS-RecruitTests";
+			productName = "Hahow-iOS-RecruitTests";
+			productReference = 65E9E1F9270C301B00DDEADC /* Hahow-iOS-RecruitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65E9E203270C301B00DDEADC /* Hahow-iOS-RecruitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E9E213270C301B00DDEADC /* Build configuration list for PBXNativeTarget "Hahow-iOS-RecruitUITests" */;
+			buildPhases = (
+				65E9E200270C301B00DDEADC /* Sources */,
+				65E9E201270C301B00DDEADC /* Frameworks */,
+				65E9E202270C301B00DDEADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65E9E206270C301B00DDEADC /* PBXTargetDependency */,
+			);
+			name = "Hahow-iOS-RecruitUITests";
+			productName = "Hahow-iOS-RecruitUITests";
+			productReference = 65E9E204270C301B00DDEADC /* Hahow-iOS-RecruitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65E9E1DB270C301A00DDEADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					65E9E1E2270C301A00DDEADC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					65E9E1F8270C301B00DDEADC = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 65E9E1E2270C301A00DDEADC;
+					};
+					65E9E203270C301B00DDEADC = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 65E9E1E2270C301A00DDEADC;
+					};
+				};
+			};
+			buildConfigurationList = 65E9E1DE270C301A00DDEADC /* Build configuration list for PBXProject "Hahow-iOS-Recruit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65E9E1DA270C301A00DDEADC;
+			productRefGroup = 65E9E1E4270C301A00DDEADC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65E9E1E2270C301A00DDEADC /* Hahow-iOS-Recruit */,
+				65E9E1F8270C301B00DDEADC /* Hahow-iOS-RecruitTests */,
+				65E9E203270C301B00DDEADC /* Hahow-iOS-RecruitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65E9E1E1270C301A00DDEADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E9E1F3270C301B00DDEADC /* LaunchScreen.storyboard in Resources */,
+				65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */,
+				65E9E1EE270C301A00DDEADC /* Main.storyboard in Resources */,
+				65E9E217270C307D00DDEADC /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E9E1F7270C301B00DDEADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E9E202270C301B00DDEADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65E9E1DF270C301A00DDEADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E9E1EB270C301A00DDEADC /* ViewController.swift in Sources */,
+				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
+				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E9E1F5270C301B00DDEADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E9E1FE270C301B00DDEADC /* Hahow_iOS_RecruitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E9E200270C301B00DDEADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E9E209270C301B00DDEADC /* Hahow_iOS_RecruitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65E9E1FB270C301B00DDEADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65E9E1E2270C301A00DDEADC /* Hahow-iOS-Recruit */;
+			targetProxy = 65E9E1FA270C301B00DDEADC /* PBXContainerItemProxy */;
+		};
+		65E9E206270C301B00DDEADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65E9E1E2270C301A00DDEADC /* Hahow-iOS-Recruit */;
+			targetProxy = 65E9E205270C301B00DDEADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65E9E1EC270C301A00DDEADC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65E9E1ED270C301A00DDEADC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65E9E1F1270C301B00DDEADC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65E9E1F2270C301B00DDEADC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65E9E20B270C301B00DDEADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65E9E20C270C301B00DDEADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65E9E20E270C301B00DDEADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hahow-iOS-Recruit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.hahow.Hahow-iOS-Recruit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65E9E20F270C301B00DDEADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hahow-iOS-Recruit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.hahow.Hahow-iOS-Recruit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65E9E211270C301B00DDEADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hahow-iOS-RecruitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.hahow.Hahow-iOS-RecruitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hahow-iOS-Recruit.app/Hahow-iOS-Recruit";
+			};
+			name = Debug;
+		};
+		65E9E212270C301B00DDEADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hahow-iOS-RecruitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.hahow.Hahow-iOS-RecruitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hahow-iOS-Recruit.app/Hahow-iOS-Recruit";
+			};
+			name = Release;
+		};
+		65E9E214270C301B00DDEADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hahow-iOS-RecruitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.hahow.Hahow-iOS-RecruitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hahow-iOS-Recruit";
+			};
+			name = Debug;
+		};
+		65E9E215270C301B00DDEADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hahow-iOS-RecruitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.hahow.Hahow-iOS-RecruitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hahow-iOS-Recruit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65E9E1DE270C301A00DDEADC /* Build configuration list for PBXProject "Hahow-iOS-Recruit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E9E20B270C301B00DDEADC /* Debug */,
+				65E9E20C270C301B00DDEADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E9E20D270C301B00DDEADC /* Build configuration list for PBXNativeTarget "Hahow-iOS-Recruit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E9E20E270C301B00DDEADC /* Debug */,
+				65E9E20F270C301B00DDEADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E9E210270C301B00DDEADC /* Build configuration list for PBXNativeTarget "Hahow-iOS-RecruitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E9E211270C301B00DDEADC /* Debug */,
+				65E9E212270C301B00DDEADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E9E213270C301B00DDEADC /* Build configuration list for PBXNativeTarget "Hahow-iOS-RecruitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E9E214270C301B00DDEADC /* Debug */,
+				65E9E215270C301B00DDEADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65E9E1DB270C301A00DDEADC /* Project object */;
+}
