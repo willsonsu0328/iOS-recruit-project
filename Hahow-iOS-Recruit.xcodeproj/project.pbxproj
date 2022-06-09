@@ -19,6 +19,7 @@
 		65E9E209270C301B00DDEADC /* Hahow_iOS_RecruitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E208270C301B00DDEADC /* Hahow_iOS_RecruitUITests.swift */; };
 		65E9E217270C307D00DDEADC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E216270C307D00DDEADC /* data.json */; };
 		B76B19B27F79F3541D728165 /* Pods_Hahow_iOS_RecruitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC82EFE1AC2F33C173B176E /* Pods_Hahow_iOS_RecruitTests.framework */; };
+		C83230982851B70A00612EB1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C83230972851B70A00612EB1 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		89B2187FCE6BE661F49E0E32 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD04632B3CA4BD8AF2C04CDA /* Pods-Hahow-iOS-RecruitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-RecruitTests.debug.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADC82EFE1AC2F33C173B176E /* Pods_Hahow_iOS_RecruitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hahow_iOS_RecruitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83230972851B70A00612EB1 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CE953057EF0B99D3E9281965 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7245BB4650F00429A554DFF /* Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF7071715E5C8E6BB85CD39 /* Pods-Hahow-iOS-RecruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-RecruitTests.release.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		65E9E1DA270C301A00DDEADC = {
 			isa = PBXGroup;
 			children = (
+				C83230972851B70A00612EB1 /* .swiftlint.yml */,
 				65E9E1E5270C301A00DDEADC /* Hahow-iOS-Recruit */,
 				65E9E1FC270C301B00DDEADC /* Hahow-iOS-RecruitTests */,
 				65E9E207270C301B00DDEADC /* Hahow-iOS-RecruitUITests */,
@@ -168,7 +171,6 @@
 				AD04632B3CA4BD8AF2C04CDA /* Pods-Hahow-iOS-RecruitTests.debug.xcconfig */,
 				FCF7071715E5C8E6BB85CD39 /* Pods-Hahow-iOS-RecruitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,6 +185,7 @@
 				65E9E1DF270C301A00DDEADC /* Sources */,
 				65E9E1E0270C301A00DDEADC /* Frameworks */,
 				65E9E1E1270C301A00DDEADC /* Resources */,
+				C83230962851B6ED00612EB1 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -278,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83230982851B70A00612EB1 /* .swiftlint.yml in Resources */,
 				65E9E1F3270C301B00DDEADC /* LaunchScreen.storyboard in Resources */,
 				65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */,
 				65E9E1EE270C301A00DDEADC /* Main.storyboard in Resources */,
@@ -345,6 +349,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C83230962851B6ED00612EB1 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		CDB07A6E4752FBDA798968B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
