@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -260,6 +260,7 @@
 				65E9E1E0270C301A00DDEADC /* Frameworks */,
 				65E9E1E1270C301A00DDEADC /* Resources */,
 				C83230962851B6ED00612EB1 /* SwiftLint */,
+				8AABBF4D29359F79D108A227 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +298,7 @@
 				65E9E200270C301B00DDEADC /* Sources */,
 				65E9E201270C301B00DDEADC /* Frameworks */,
 				65E9E202270C301B00DDEADC /* Resources */,
+				3AEF601A37A03CCB1FD4EE8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -422,6 +424,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AEF601A37A03CCB1FD4EE8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AABBF4D29359F79D108A227 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hahow-iOS-Recruit/Pods-Hahow-iOS-Recruit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hahow-iOS-Recruit/Pods-Hahow-iOS-Recruit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hahow-iOS-Recruit/Pods-Hahow-iOS-Recruit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C83230962851B6ED00612EB1 /* SwiftLint */ = {
@@ -733,7 +769,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89B2187FCE6BE661F49E0E32 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Hahow-iOS-RecruitUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -753,7 +789,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE953057EF0B99D3E9281965 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Hahow-iOS-RecruitUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

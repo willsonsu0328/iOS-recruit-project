@@ -8,6 +8,7 @@ target 'Hahow-iOS-Recruit' do
 
   # Pods for Hahow-iOS-Recruit
   pod 'SwiftLint'
+  pod 'ReactiveCocoa'
 
   target 'Hahow-iOS-RecruitTests' do
     inherit! :search_paths
