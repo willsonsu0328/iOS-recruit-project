@@ -7,11 +7,11 @@ target 'Hahow-iOS-Recruit' do
   use_frameworks!
 
   # Pods for Hahow-iOS-Recruit
+  pod 'SwiftLint'
 
   target 'Hahow-iOS-RecruitTests' do
     inherit! :search_paths
-    pod 'SwiftLint'
-    
+
   end
 
   target 'Hahow-iOS-RecruitUITests' do
