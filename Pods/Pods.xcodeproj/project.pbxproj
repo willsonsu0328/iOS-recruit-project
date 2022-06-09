@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16D52C2212287FD936F2EAC9290E76B5 /* Pods-Hahow-iOS-RecruitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B9A345515ABD98F3643D78015F0BFD /* Pods-Hahow-iOS-RecruitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56B0426906FAD523F94A7542E057F6C8 /* Pods-Hahow-iOS-Recruit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6ACC9C6BC3036839446883D9DB21476 /* Pods-Hahow-iOS-Recruit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E497825BA66856CA8054D4257FE8D5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		70464C19B3B7B860B76A564DEF077B14 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62645C8A4E95C3CCD6C79227EBF42DDE /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83C74B0BE1C099D222D1ADE86BCF5F33 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F60F8EB4F12BBED7583B4105760D158 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-dummy.m */; };
+		A0C46C5C5643DEBAF992E203AB96FFD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A601E6ABE82AFD5A58AA7D0424F40B8E /* Pods-Hahow-iOS-Recruit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F925B5EF371A4BED540E6ADD261070F3 /* Pods-Hahow-iOS-Recruit-dummy.m */; };
+		AC71BEB42D79695A1E510A243D01C3F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DD2ED0E71A567C250ACC3E8D273D6CC9 /* Pods-Hahow-iOS-RecruitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A97CA1162B5D3531E5BE33577A3BE74A /* Pods-Hahow-iOS-RecruitTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA322D6FC7A2A2203067201994696F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBEEB2C34A9EA6EDAFCF7A8C3C13C776;
+			remoteInfo = "Pods-Hahow-iOS-Recruit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12384A10DF9959247204DBD5B1A7CBA5 /* Pods-Hahow-iOS-RecruitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hahow-iOS-RecruitTests-Info.plist"; sourceTree = "<group>"; };
+		17541C11403E3F31879FBC908F552B86 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		176B1C45793AEBF61B40FDDB123E39FB /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.modulemap"; sourceTree = "<group>"; };
+		177D43A702BF6D16036E84063C6D9F05 /* Pods-Hahow-iOS-Recruit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hahow-iOS-Recruit-acknowledgements.plist"; sourceTree = "<group>"; };
+		1CD6B6B583A2F8E9898E4618E4BCC4BD /* Pods-Hahow-iOS-RecruitTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hahow-iOS-RecruitTests.modulemap"; sourceTree = "<group>"; };
+		230DBE760F53B27255D0230320DBF44F /* Pods-Hahow-iOS-RecruitTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Hahow-iOS-RecruitTests"; path = Pods_Hahow_iOS_RecruitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E91E4FA1B4821DAAF010A89C0B23CDD /* Pods-Hahow-iOS-Recruit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hahow-iOS-Recruit-Info.plist"; sourceTree = "<group>"; };
+		4D6053E5E3B7874E1324D6640F64CFF7 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		52F65E8470D4FA4CD1203297A9F2F5F1 /* Pods-Hahow-iOS-Recruit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hahow-iOS-Recruit.release.xcconfig"; sourceTree = "<group>"; };
+		59CA4FD3B07C9E912EC7BBF50C364972 /* Pods-Hahow-iOS-Recruit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hahow-iOS-Recruit.debug.xcconfig"; sourceTree = "<group>"; };
+		62645C8A4E95C3CCD6C79227EBF42DDE /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-umbrella.h"; sourceTree = "<group>"; };
+		68538A0A4C6EAB000732AF4750FDA256 /* Pods-Hahow-iOS-RecruitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hahow-iOS-RecruitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6CA2A1E9A3493B408550218C20E6A785 /* Pods-Hahow-iOS-Recruit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Hahow-iOS-Recruit"; path = Pods_Hahow_iOS_Recruit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F60F8EB4F12BBED7583B4105760D158 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		83B9A345515ABD98F3643D78015F0BFD /* Pods-Hahow-iOS-RecruitTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hahow-iOS-RecruitTests-umbrella.h"; sourceTree = "<group>"; };
+		9CEF88175247932DDAA70C753FB04E9A /* Pods-Hahow-iOS-RecruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hahow-iOS-RecruitTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A97CA1162B5D3531E5BE33577A3BE74A /* Pods-Hahow-iOS-RecruitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hahow-iOS-RecruitTests-dummy.m"; sourceTree = "<group>"; };
+		AFE6C77F24C02A2758973E153327FB27 /* Pods-Hahow-iOS-Recruit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hahow-iOS-Recruit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBBFA8766E72AF948931FD5A41460D17 /* Pods-Hahow-iOS-RecruitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hahow-iOS-RecruitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC4A3DCF8FD3B3013C1BBEDD16D58923 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-Info.plist"; sourceTree = "<group>"; };
+		D3EC2AF3DCB4E8B40E4F5F5F25CB16C2 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6ACC9C6BC3036839446883D9DB21476 /* Pods-Hahow-iOS-Recruit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hahow-iOS-Recruit-umbrella.h"; sourceTree = "<group>"; };
+		D6AE0BD15A9317CDC91B81E774ACC27B /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests"; path = Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD950D9E057473AFEA778E315B6482C5 /* Pods-Hahow-iOS-Recruit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hahow-iOS-Recruit.modulemap"; sourceTree = "<group>"; };
+		EC78B4244E475E3811991C58DB94C192 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4997A22D5014198FCE2A6164648F830 /* Pods-Hahow-iOS-RecruitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hahow-iOS-RecruitTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F925B5EF371A4BED540E6ADD261070F3 /* Pods-Hahow-iOS-Recruit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hahow-iOS-Recruit-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		218C731441B1B730D39112431E3E7BF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC71BEB42D79695A1E510A243D01C3F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		316729B6E46A4FCE855B7C702F67C2E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C46C5C5643DEBAF992E203AB96FFD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0011A03B6B6D1FBBE9DCC70145F704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E497825BA66856CA8054D4257FE8D5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12D6A93A2292146AF9E67BDB8E2DB4F5 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				176B1C45793AEBF61B40FDDB123E39FB /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.modulemap */,
+				EC78B4244E475E3811991C58DB94C192 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-acknowledgements.markdown */,
+				4D6053E5E3B7874E1324D6640F64CFF7 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-acknowledgements.plist */,
+				6F60F8EB4F12BBED7583B4105760D158 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-dummy.m */,
+				CC4A3DCF8FD3B3013C1BBEDD16D58923 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-Info.plist */,
+				62645C8A4E95C3CCD6C79227EBF42DDE /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-umbrella.h */,
+				D3EC2AF3DCB4E8B40E4F5F5F25CB16C2 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.debug.xcconfig */,
+				17541C11403E3F31879FBC908F552B86 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig */,
+			);
+			name = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests";
+			path = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests";
+			sourceTree = "<group>";
+		};
+		316A81E452BBDC2A2F2D8CAD76B75E8B /* Pods-Hahow-iOS-RecruitTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6B6B583A2F8E9898E4618E4BCC4BD /* Pods-Hahow-iOS-RecruitTests.modulemap */,
+				68538A0A4C6EAB000732AF4750FDA256 /* Pods-Hahow-iOS-RecruitTests-acknowledgements.markdown */,
+				F4997A22D5014198FCE2A6164648F830 /* Pods-Hahow-iOS-RecruitTests-acknowledgements.plist */,
+				A97CA1162B5D3531E5BE33577A3BE74A /* Pods-Hahow-iOS-RecruitTests-dummy.m */,
+				12384A10DF9959247204DBD5B1A7CBA5 /* Pods-Hahow-iOS-RecruitTests-Info.plist */,
+				83B9A345515ABD98F3643D78015F0BFD /* Pods-Hahow-iOS-RecruitTests-umbrella.h */,
+				CBBFA8766E72AF948931FD5A41460D17 /* Pods-Hahow-iOS-RecruitTests.debug.xcconfig */,
+				9CEF88175247932DDAA70C753FB04E9A /* Pods-Hahow-iOS-RecruitTests.release.xcconfig */,
+			);
+			name = "Pods-Hahow-iOS-RecruitTests";
+			path = "Target Support Files/Pods-Hahow-iOS-RecruitTests";
+			sourceTree = "<group>";
+		};
+		4649E888A1BE4A03AAAC067044FD7A73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CA2A1E9A3493B408550218C20E6A785 /* Pods-Hahow-iOS-Recruit */,
+				D6AE0BD15A9317CDC91B81E774ACC27B /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests */,
+				230DBE760F53B27255D0230320DBF44F /* Pods-Hahow-iOS-RecruitTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		70C797821E27206469BCBCDF6C1DCA81 /* Pods-Hahow-iOS-Recruit */ = {
+			isa = PBXGroup;
+			children = (
+				DD950D9E057473AFEA778E315B6482C5 /* Pods-Hahow-iOS-Recruit.modulemap */,
+				AFE6C77F24C02A2758973E153327FB27 /* Pods-Hahow-iOS-Recruit-acknowledgements.markdown */,
+				177D43A702BF6D16036E84063C6D9F05 /* Pods-Hahow-iOS-Recruit-acknowledgements.plist */,
+				F925B5EF371A4BED540E6ADD261070F3 /* Pods-Hahow-iOS-Recruit-dummy.m */,
+				3E91E4FA1B4821DAAF010A89C0B23CDD /* Pods-Hahow-iOS-Recruit-Info.plist */,
+				D6ACC9C6BC3036839446883D9DB21476 /* Pods-Hahow-iOS-Recruit-umbrella.h */,
+				59CA4FD3B07C9E912EC7BBF50C364972 /* Pods-Hahow-iOS-Recruit.debug.xcconfig */,
+				52F65E8470D4FA4CD1203297A9F2F5F1 /* Pods-Hahow-iOS-Recruit.release.xcconfig */,
+			);
+			name = "Pods-Hahow-iOS-Recruit";
+			path = "Target Support Files/Pods-Hahow-iOS-Recruit";
+			sourceTree = "<group>";
+		};
+		8B2A738F363E8F0E7BF24C78302010E4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70C797821E27206469BCBCDF6C1DCA81 /* Pods-Hahow-iOS-Recruit */,
+				12D6A93A2292146AF9E67BDB8E2DB4F5 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests */,
+				316A81E452BBDC2A2F2D8CAD76B75E8B /* Pods-Hahow-iOS-RecruitTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4649E888A1BE4A03AAAC067044FD7A73 /* Products */,
+				8B2A738F363E8F0E7BF24C78302010E4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27888FC253F6AAC16E9A86A1084A60BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B0426906FAD523F94A7542E057F6C8 /* Pods-Hahow-iOS-Recruit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D20813F920E26C6D75B89085E93A2FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70464C19B3B7B860B76A564DEF077B14 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8858A3C4692A37E6A208BEF4550F103F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D52C2212287FD936F2EAC9290E76B5 /* Pods-Hahow-iOS-RecruitTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5CB3DFF3C1693F5326979ACE712C72B0 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34C10F04FF9A5F85D30F311D21ECFF3B /* Build configuration list for PBXNativeTarget "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests" */;
+			buildPhases = (
+				2D20813F920E26C6D75B89085E93A2FA /* Headers */,
+				FCDF9150CC0A19FB64A28EBF3FFCE9E0 /* Sources */,
+				218C731441B1B730D39112431E3E7BF2 /* Frameworks */,
+				BFEA85C9D3432E8EFE60D9E23B1B457A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests";
+			productName = Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests;
+			productReference = D6AE0BD15A9317CDC91B81E774ACC27B /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		BBEEB2C34A9EA6EDAFCF7A8C3C13C776 /* Pods-Hahow-iOS-Recruit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7823A3B1FF07FEA2EC7061FC95305D1 /* Build configuration list for PBXNativeTarget "Pods-Hahow-iOS-Recruit" */;
+			buildPhases = (
+				27888FC253F6AAC16E9A86A1084A60BF /* Headers */,
+				89DA0535F2CCF47A29D73500411C2715 /* Sources */,
+				CE0011A03B6B6D1FBBE9DCC70145F704 /* Frameworks */,
+				844830B85715E47C2D9FF7E7B5E675D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Hahow-iOS-Recruit";
+			productName = Pods_Hahow_iOS_Recruit;
+			productReference = 6CA2A1E9A3493B408550218C20E6A785 /* Pods-Hahow-iOS-Recruit */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2A819F71D116287C1C87D8444142EEA /* Pods-Hahow-iOS-RecruitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA67CED896F14EA6BC5101EA8DAD0136 /* Build configuration list for PBXNativeTarget "Pods-Hahow-iOS-RecruitTests" */;
+			buildPhases = (
+				8858A3C4692A37E6A208BEF4550F103F /* Headers */,
+				FC347F7A6512BF1ACC4E43F7A37565D0 /* Sources */,
+				316729B6E46A4FCE855B7C702F67C2E9 /* Frameworks */,
+				64AF8546512130221892736F370E0628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9FB92D654F6F65E80D86797B2E8E426 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hahow-iOS-RecruitTests";
+			productName = Pods_Hahow_iOS_RecruitTests;
+			productReference = 230DBE760F53B27255D0230320DBF44F /* Pods-Hahow-iOS-RecruitTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4649E888A1BE4A03AAAC067044FD7A73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBEEB2C34A9EA6EDAFCF7A8C3C13C776 /* Pods-Hahow-iOS-Recruit */,
+				5CB3DFF3C1693F5326979ACE712C72B0 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests */,
+				F2A819F71D116287C1C87D8444142EEA /* Pods-Hahow-iOS-RecruitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64AF8546512130221892736F370E0628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844830B85715E47C2D9FF7E7B5E675D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFEA85C9D3432E8EFE60D9E23B1B457A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89DA0535F2CCF47A29D73500411C2715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A601E6ABE82AFD5A58AA7D0424F40B8E /* Pods-Hahow-iOS-Recruit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC347F7A6512BF1ACC4E43F7A37565D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2ED0E71A567C250ACC3E8D273D6CC9 /* Pods-Hahow-iOS-RecruitTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDF9150CC0A19FB64A28EBF3FFCE9E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C74B0BE1C099D222D1ADE86BCF5F33 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9FB92D654F6F65E80D86797B2E8E426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Hahow-iOS-Recruit";
+			target = BBEEB2C34A9EA6EDAFCF7A8C3C13C776 /* Pods-Hahow-iOS-Recruit */;
+			targetProxy = EA322D6FC7A2A2203067201994696F38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4EEB6F3558C179E85FA5B1BD34AD44CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59CA4FD3B07C9E912EC7BBF50C364972 /* Pods-Hahow-iOS-Recruit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hahow-iOS-Recruit/Pods-Hahow-iOS-Recruit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hahow-iOS-Recruit/Pods-Hahow-iOS-Recruit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7574F626FDD50F6EBA765E95FEFA5016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F65E8470D4FA4CD1203297A9F2F5F1 /* Pods-Hahow-iOS-Recruit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hahow-iOS-Recruit/Pods-Hahow-iOS-Recruit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hahow-iOS-Recruit/Pods-Hahow-iOS-Recruit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9103061A944AB7CD4B885C410402BA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3EC2AF3DCB4E8B40E4F5F5F25CB16C2 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9F55620E8832417E8D37A75268CB8AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBFA8766E72AF948931FD5A41460D17 /* Pods-Hahow-iOS-RecruitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7264BB562FB1FDF4FAB786A3050D72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17541C11403E3F31879FBC908F552B86 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDC42DF413C8C87990EDB2C73A2E799A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CEF88175247932DDAA70C753FB04E9A /* Pods-Hahow-iOS-RecruitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34C10F04FF9A5F85D30F311D21ECFF3B /* Build configuration list for PBXNativeTarget "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9103061A944AB7CD4B885C410402BA8E /* Debug */,
+				E7264BB562FB1FDF4FAB786A3050D72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA67CED896F14EA6BC5101EA8DAD0136 /* Build configuration list for PBXNativeTarget "Pods-Hahow-iOS-RecruitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F55620E8832417E8D37A75268CB8AE8 /* Debug */,
+				FDC42DF413C8C87990EDB2C73A2E799A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7823A3B1FF07FEA2EC7061FC95305D1 /* Build configuration list for PBXNativeTarget "Pods-Hahow-iOS-Recruit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EEB6F3558C179E85FA5B1BD34AD44CC /* Debug */,
+				7574F626FDD50F6EBA765E95FEFA5016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
