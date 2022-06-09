@@ -20,6 +20,9 @@
 		65E9E217270C307D00DDEADC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E216270C307D00DDEADC /* data.json */; };
 		B76B19B27F79F3541D728165 /* Pods_Hahow_iOS_RecruitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC82EFE1AC2F33C173B176E /* Pods_Hahow_iOS_RecruitTests.framework */; };
 		C83230982851B70A00612EB1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C83230972851B70A00612EB1 /* .swiftlint.yml */; };
+		C83230A22851B8CE00612EB1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A12851B8CE00612EB1 /* BaseViewController.swift */; };
+		C83230A42851B8EC00612EB1 /* CourseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A32851B8EC00612EB1 /* CourseHomeViewController.swift */; };
+		C83230A62851B9DF00612EB1 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A52851B9DF00612EB1 /* Style.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		AD04632B3CA4BD8AF2C04CDA /* Pods-Hahow-iOS-RecruitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-RecruitTests.debug.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADC82EFE1AC2F33C173B176E /* Pods_Hahow_iOS_RecruitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hahow_iOS_RecruitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83230972851B70A00612EB1 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C83230A12851B8CE00612EB1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C83230A32851B8EC00612EB1 /* CourseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHomeViewController.swift; sourceTree = "<group>"; };
+		C83230A52851B9DF00612EB1 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		CE953057EF0B99D3E9281965 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7245BB4650F00429A554DFF /* Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF7071715E5C8E6BB85CD39 /* Pods-Hahow-iOS-RecruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-RecruitTests.release.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 		65E9E1E5270C301A00DDEADC /* Hahow-iOS-Recruit */ = {
 			isa = PBXGroup;
 			children = (
+				C83230992851B85700612EB1 /* Utility */,
+				C832309B2851B87000612EB1 /* Base */,
+				C832309C2851B87C00612EB1 /* Home */,
 				65E9E216270C307D00DDEADC /* data.json */,
 				65E9E1E6270C301A00DDEADC /* AppDelegate.swift */,
 				65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */,
@@ -159,6 +168,71 @@
 				ADC82EFE1AC2F33C173B176E /* Pods_Hahow_iOS_RecruitTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C83230992851B85700612EB1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C83230A52851B9DF00612EB1 /* Style.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C832309A2851B86800612EB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C832309B2851B87000612EB1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C83230A02851B8C000612EB1 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C832309C2851B87C00612EB1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C832309F2851B8B000612EB1 /* View Model */,
+				C832309E2851B8A700612EB1 /* View */,
+				C832309D2851B89E00612EB1 /* Controller */,
+				C832309A2851B86800612EB1 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C832309D2851B89E00612EB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C83230A32851B8EC00612EB1 /* CourseHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C832309E2851B8A700612EB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = Controller/View;
+			sourceTree = "<group>";
+		};
+		C832309F2851B8B000612EB1 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C83230A02851B8C000612EB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C83230A12851B8CE00612EB1 /* BaseViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E1DF8D06E31CEAA06D6DF60F /* Pods */ = {
@@ -398,6 +472,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E9E1EB270C301A00DDEADC /* ViewController.swift in Sources */,
+				C83230A62851B9DF00612EB1 /* Style.swift in Sources */,
+				C83230A42851B8EC00612EB1 /* CourseHomeViewController.swift in Sources */,
+				C83230A22851B8CE00612EB1 /* BaseViewController.swift in Sources */,
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
 				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
 			);
