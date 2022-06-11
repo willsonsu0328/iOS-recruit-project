@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import ReactiveSwift
 
 protocol CourseDataLoaderProtocol {
 
     var categoryModels: [CategoryModel] { get }
 
-    func load()
+    var loadSignal: SignalProducer<CourseDataLoaderProtocol, Error> { get }
 
 }

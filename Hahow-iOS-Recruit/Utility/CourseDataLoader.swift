@@ -6,21 +6,28 @@
 //
 
 import UIKit
+import ReactiveSwift
 
 class CourseDataLoader: CourseDataLoaderProtocol {
 
     var categoryModels: [CategoryModel] = []
 
-    func load() {
-        let jsonDataHelper = JSONDataHelper(fileName: "data")
-        jsonDataHelper.loadData()
-        guard let data = jsonDataHelper.data else { return }
+    let fileName: String = "data"
 
-        do {
-            let dataModel = try JSONDecoder().decode(DataModel.self, from: data)
-            categoryModels = dataModel.categoryModels
-        } catch let error {
-            print(error)
+    var loadSignal: SignalProducer<CourseDataLoaderProtocol, Error> {
+        return SignalProducer { [weak self] observer, _ in
+            guard let self = self else { return }
+            let jsonDataHelper = JSONDataHelper(fileName: self.fileName)
+            jsonDataHelper.loadData()
+            guard let data = jsonDataHelper.data else { return }
+            do {
+                let dataModel = try JSONDecoder().decode(DataModel.self, from: data)
+                self.categoryModels = dataModel.categoryModels
+                observer.sendCompleted()
+            } catch let error {
+                observer.send(error: error)
+            }
         }
     }
+
 }
