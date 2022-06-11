@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct CategoryModel: Codable {
+class CategoryModel: Codable {
 
     enum CategoryType: String, Codable {
         case undefined = ""
