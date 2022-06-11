@@ -21,8 +21,13 @@ class CourseHomeViewModel: BaseViewModel {
     var categoryModels: [CategoryModel] = [] {
         didSet {
             filteredCategoryModel = categoryModels
-            if currentDeviceModel == .phone {
+            switch currentDeviceModel {
+            case .phone:
                 filterCategoryModels(prefix: 3)
+            case .pad:
+                filterCategoryModels(prefix: 4)
+            default:
+                break
             }
         }
     }
