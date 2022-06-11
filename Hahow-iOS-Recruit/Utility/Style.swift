@@ -10,6 +10,9 @@ import UIKit
 class Style: NSObject {
 
     // 在此可定義整體 app 的 style，例如 Navigation bar
+    static let lSpace: CGFloat = 15.0
+    static let mSpace: CGFloat = 12.0
+    static let sSpace: CGFloat = 10.0
 }
 
 // 自定義顏色及字體，方便整體套用及管理，g 代表 global，可以根據不同需求另外定義
