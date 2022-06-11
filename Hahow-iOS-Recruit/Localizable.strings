@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Hahow-iOS-Recruit
+
+  Created by Wilson on 2022/6/11.
+  
+*/
+
+"coursehome_categoryprogramming" = "程式";
+"coursehome_categorydesign" = "設計";
+"coursehome_categorylanguage" = "語言";
+"coursehome_categorymusic" = "音樂";
+
+
