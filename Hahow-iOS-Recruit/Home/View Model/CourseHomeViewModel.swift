@@ -16,6 +16,30 @@ class CourseHomeViewModel: BaseViewModel {
         UIDevice.current.userInterfaceIdiom
     }
 
+    // MARK: Presentation
+
+    enum CellType: Int {
+        case bigCell
+        case smallCell
+    }
+
+    func cellType(for indexPath: IndexPath) -> CellType {
+        var cellType: CellType = .smallCell
+        switch currentDeviceModel {
+        case .phone:
+            if indexPath.item == 0 {
+                cellType = .bigCell
+            } else {
+                cellType = .smallCell
+            }
+        case .pad:
+            cellType = .smallCell
+        default:
+            break
+        }
+        return cellType
+    }
+
     // MARK: Storage
 
     var categoryModels: [CategoryModel] = [] {

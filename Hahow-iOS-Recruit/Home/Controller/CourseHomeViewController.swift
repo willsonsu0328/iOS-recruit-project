@@ -148,27 +148,16 @@ extension CourseHomeViewController: UICollectionViewDataSource {
 
         let categoryModel = courseHomeViewModel.filteredCategoryModel[indexPath.section]
 
-        // TODO: improved code
-        if courseHomeViewModel.currentDeviceModel == .phone {
-            if indexPath.item == 0, let bigCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeBigCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeBigCollectionViewCell {
+        if courseHomeViewModel.cellType(for: indexPath) == .bigCell, let bigCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeBigCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeBigCollectionViewCell {
 
-                bigCell.course = categoryModel.filterCourses[indexPath.item]
+            bigCell.course = categoryModel.filterCourses[indexPath.item]
+            return bigCell
 
-                return bigCell
+        } else if courseHomeViewModel.cellType(for: indexPath) == .smallCell, let smallCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeSmallCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeSmallCollectionViewCell {
 
-            } else if let smallCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeSmallCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeSmallCollectionViewCell {
+            smallCell.course = categoryModel.filterCourses[indexPath.item]
 
-                smallCell.course = categoryModel.filterCourses[indexPath.item]
-
-                return smallCell
-            }
-        } else {
-            if let smallCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeSmallCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeSmallCollectionViewCell {
-
-                smallCell.course = categoryModel.filterCourses[indexPath.item]
-
-                return smallCell
-            }
+            return smallCell
         }
 
         return UICollectionViewCell()
