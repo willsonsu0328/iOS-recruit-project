@@ -10,6 +10,7 @@ target 'Hahow-iOS-Recruit' do
   pod 'SwiftLint'
   pod 'ReactiveCocoa'
   pod 'PureLayout'
+  pod 'SDWebImage'
 
   target 'Hahow-iOS-RecruitTests' do
     inherit! :search_paths

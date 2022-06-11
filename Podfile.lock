@@ -3,11 +3,15 @@ PODS:
   - ReactiveCocoa (12.0.0):
     - ReactiveSwift (~> 7.0)
   - ReactiveSwift (7.0.0)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
   - SwiftLint (0.47.1)
 
 DEPENDENCIES:
   - PureLayout
   - ReactiveCocoa
+  - SDWebImage
   - SwiftLint
 
 SPEC REPOS:
@@ -15,14 +19,16 @@ SPEC REPOS:
     - PureLayout
     - ReactiveCocoa
     - ReactiveSwift
+    - SDWebImage
     - SwiftLint
 
 SPEC CHECKSUMS:
   PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
   ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
   ReactiveSwift: 48c4b9d3b497e8dd20b10300bb1a28ff93550f13
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
 
-PODFILE CHECKSUM: 7444157df1100142d17536ffc74c30564c40da4a
+PODFILE CHECKSUM: 493557038b7ed42fe89629204bffc165d56c763a
 
 COCOAPODS: 1.11.3
