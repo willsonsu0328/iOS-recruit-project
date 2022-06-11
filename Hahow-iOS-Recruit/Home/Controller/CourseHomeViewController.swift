@@ -124,11 +124,10 @@ class CourseHomeViewController: BaseViewController {
         coordinator.animate(alongsideTransition: nil) { [weak self] _ in
             guard let self = self else { return }
             if self.traitCollection.horizontalSizeClass == .compact {
-                self.collectionView.collectionViewLayout = self.collectionViewIPadCompactLayout
+                self.collectionView.setCollectionViewLayout(self.collectionViewIPadCompactLayout, animated: true)
             } else {
-                self.collectionView.collectionViewLayout = self.collectionViewIPadRegularLayout
+                self.collectionView.setCollectionViewLayout(self.collectionViewIPadRegularLayout, animated: true)
             }
-            self.collectionView.reloadData()
         }
     }
 
