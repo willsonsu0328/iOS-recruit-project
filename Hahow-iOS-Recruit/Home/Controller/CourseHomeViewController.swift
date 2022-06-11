@@ -11,6 +11,7 @@ import PureLayout
 
 class CourseHomeViewController: BaseViewController {
 
+    // iPhone layout
     lazy var collectionViewIPhoneLayout: UICollectionViewLayout = {
         let bigItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(370.0))
         let bigItem = NSCollectionLayoutItem(layoutSize: bigItemSize)
@@ -21,6 +22,28 @@ class CourseHomeViewController: BaseViewController {
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(500.0))
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [bigItem, smallItem, smallItem])
         group.interItemSpacing = NSCollectionLayoutSpacing.fixed(Style.mSpace)
+
+        let section = NSCollectionLayoutSection(group: group)
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(50.0))
+        let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        section.boundarySupplementaryItems = [header]
+        section.contentInsets = .init(top: 0, leading: Style.lSpace, bottom: Style.lSpace, trailing: Style.lSpace)
+        let layout = UICollectionViewCompositionalLayout(section: section)
+
+        return layout
+    }()
+
+    // IPad size class 為 Regular 的 layout
+    var collectionViewIPadRegularLayout: UICollectionViewLayout {
+        let viewWidth: CGFloat = view.bounds.width
+        let itemWidth: CGFloat = viewWidth / 2 - Style.lSpace
+        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(itemWidth), heightDimension: .absolute(90.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(viewWidth), heightDimension: .estimated(180.0))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item, item, item, item])
+        group.edgeSpacing = NSCollectionLayoutEdgeSpacing(leading: NSCollectionLayoutSpacing.fixed(0.0), top: NSCollectionLayoutSpacing.fixed(0.0), trailing: NSCollectionLayoutSpacing.fixed(0.0), bottom: NSCollectionLayoutSpacing.fixed(Style.sSpace))
+
         let section = NSCollectionLayoutSection(group: group)
         let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(50.0))
         let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
@@ -28,11 +51,41 @@ class CourseHomeViewController: BaseViewController {
         section.contentInsets = .init(top: 0, leading: Style.lSpace, bottom: Style.lSpace, trailing: Style.lSpace)
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
-    }()
+    }
+
+    // IPad size class 為 Compact 的 layout
+    var collectionViewIPadCompactLayout: UICollectionViewLayout {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(90.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(90.0))
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
+
+        let section = NSCollectionLayoutSection(group: group)
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(50.0))
+        let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+
+        section.interGroupSpacing = Style.mSpace
+
+        section.boundarySupplementaryItems = [header]
+        section.contentInsets = .init(top: 0, leading: Style.lSpace, bottom: Style.lSpace, trailing: Style.lSpace)
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
+    }
 
     lazy var collectionView: UICollectionView = {
-        // TODO: 改成根據 view model 的 device 決定要什麼 layout
-        let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: collectionViewIPhoneLayout)
+
+        // 根據裝置設定初始 layout
+        var collectionViewLayout: UICollectionViewLayout = collectionViewIPhoneLayout
+        switch courseHomeViewModel.currentDeviceModel {
+        case .phone:
+            collectionViewLayout = collectionViewIPhoneLayout
+        case .pad:
+            collectionViewLayout = collectionViewIPadRegularLayout
+        default:
+            break
+        }
+        let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: collectionViewLayout)
         collectionView.backgroundColor = .g_backgroundColor
         collectionView.dataSource = self
 
@@ -64,6 +117,21 @@ class CourseHomeViewController: BaseViewController {
         }))
     }
 
+    // MARK: Super Method
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: nil) { [weak self] _ in
+            guard let self = self else { return }
+            if self.traitCollection.horizontalSizeClass == .compact {
+                self.collectionView.collectionViewLayout = self.collectionViewIPadCompactLayout
+            } else {
+                self.collectionView.collectionViewLayout = self.collectionViewIPadRegularLayout
+            }
+            self.collectionView.reloadData()
+        }
+    }
+
 }
 
 extension CourseHomeViewController: UICollectionViewDataSource {
@@ -80,17 +148,27 @@ extension CourseHomeViewController: UICollectionViewDataSource {
 
         let categoryModel = courseHomeViewModel.filteredCategoryModel[indexPath.section]
 
-        if indexPath.item == 0, let bigCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeBigCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeBigCollectionViewCell {
+        // TODO: improved code
+        if courseHomeViewModel.currentDeviceModel == .phone {
+            if indexPath.item == 0, let bigCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeBigCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeBigCollectionViewCell {
 
-            bigCell.course = categoryModel.filterCourses[indexPath.item]
+                bigCell.course = categoryModel.filterCourses[indexPath.item]
 
-            return bigCell
+                return bigCell
 
-        } else if let smallCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeSmallCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeSmallCollectionViewCell {
+            } else if let smallCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeSmallCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeSmallCollectionViewCell {
 
-            smallCell.course = categoryModel.filterCourses[indexPath.item]
+                smallCell.course = categoryModel.filterCourses[indexPath.item]
 
-            return smallCell
+                return smallCell
+            }
+        } else {
+            if let smallCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeSmallCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeSmallCollectionViewCell {
+
+                smallCell.course = categoryModel.filterCourses[indexPath.item]
+
+                return smallCell
+            }
         }
 
         return UICollectionViewCell()
