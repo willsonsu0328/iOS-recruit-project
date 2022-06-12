@@ -23,6 +23,7 @@ class CourseHomeViewModel: BaseViewModel {
         case smallCell
     }
 
+    // 根據裝置及需求設定不同 cell type
     func cellType(for indexPath: IndexPath) -> CellType {
         var cellType: CellType = .smallCell
         switch currentDeviceModel {
@@ -60,6 +61,7 @@ class CourseHomeViewModel: BaseViewModel {
 
     // MARK: Signals
 
+    // 多建立一個 refreshContentSignal，方便之後擴充，不用更改 controller
     var refreshContentSignal: SignalProducer<CourseHomeViewModel, Error> {
         return coursesSignal
     }
@@ -76,6 +78,9 @@ class CourseHomeViewModel: BaseViewModel {
         }
     }
 
+    // MARK: Helper
+
+    // 處理課程資料顯示數量
     func filterCategoryModels(prefix: Int) {
         for categoryModel in filteredCategoryModel {
             if categoryModel.courses.count > prefix {
@@ -85,4 +90,5 @@ class CourseHomeViewModel: BaseViewModel {
             }
         }
     }
+
 }

@@ -8,6 +8,7 @@
 import UIKit
 import ReactiveSwift
 
+// 負責處理課程相關資料的來源
 class CourseDataLoader: NSObject {
 
     var categoryModels: [CategoryModel] = []

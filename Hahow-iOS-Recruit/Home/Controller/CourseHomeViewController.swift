@@ -121,6 +121,7 @@ class CourseHomeViewController: BaseViewController {
 
     // MARK: Super Method
 
+    // 處理畫面旋轉、及分割畫面
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         coordinator.animate(alongsideTransition: nil) { [weak self] _ in
