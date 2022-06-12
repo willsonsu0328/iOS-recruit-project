@@ -23,7 +23,7 @@
 		C83230A22851B8CE00612EB1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A12851B8CE00612EB1 /* BaseViewController.swift */; };
 		C83230A42851B8EC00612EB1 /* CourseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A32851B8EC00612EB1 /* CourseHomeViewController.swift */; };
 		C83230A62851B9DF00612EB1 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A52851B9DF00612EB1 /* Style.swift */; };
-		C83230A828523C8B00612EB1 /* CourseDataLoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A728523C8B00612EB1 /* CourseDataLoaderProtocol.swift */; };
+		C83230A828523C8B00612EB1 /* DataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A728523C8B00612EB1 /* DataServiceProtocol.swift */; };
 		C83230AC28523EC800612EB1 /* JSONDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230AB28523EC800612EB1 /* JSONDataHelper.swift */; };
 		C83230AE28524A4200612EB1 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230AD28524A4200612EB1 /* CourseModel.swift */; };
 		C83230B028524AFE00612EB1 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230AF28524AFE00612EB1 /* CategoryModel.swift */; };
@@ -39,6 +39,7 @@
 		C83230CB285488E600612EB1 /* CourseHomeSmallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C83230C9285488E600612EB1 /* CourseHomeSmallCollectionViewCell.xib */; };
 		C866C4AB2855A2BD00C811F4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C866C4AA2855A2BD00C811F4 /* UIImageViewExtension.swift */; };
 		C866C4AD2855A51800C811F4 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C866C4AC2855A51800C811F4 /* UIImageExtension.swift */; };
+		C866C4B02855B07C00C811F4 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C866C4AF2855B07C00C811F4 /* ErrorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +85,7 @@
 		C83230A12851B8CE00612EB1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C83230A32851B8EC00612EB1 /* CourseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHomeViewController.swift; sourceTree = "<group>"; };
 		C83230A52851B9DF00612EB1 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		C83230A728523C8B00612EB1 /* CourseDataLoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDataLoaderProtocol.swift; sourceTree = "<group>"; };
+		C83230A728523C8B00612EB1 /* DataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceProtocol.swift; sourceTree = "<group>"; };
 		C83230AB28523EC800612EB1 /* JSONDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataHelper.swift; sourceTree = "<group>"; };
 		C83230AD28524A4200612EB1 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		C83230AF28524AFE00612EB1 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		C83230C9285488E600612EB1 /* CourseHomeSmallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseHomeSmallCollectionViewCell.xib; sourceTree = "<group>"; };
 		C866C4AA2855A2BD00C811F4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		C866C4AC2855A51800C811F4 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		C866C4AF2855B07C00C811F4 /* ErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
 		CE953057EF0B99D3E9281965 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7245BB4650F00429A554DFF /* Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF7071715E5C8E6BB85CD39 /* Pods-Hahow-iOS-RecruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-RecruitTests.release.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,7 +212,8 @@
 				C83230A52851B9DF00612EB1 /* Style.swift */,
 				C83230AB28523EC800612EB1 /* JSONDataHelper.swift */,
 				C83230B128524DDC00612EB1 /* CourseDataLoader.swift */,
-				C83230A728523C8B00612EB1 /* CourseDataLoaderProtocol.swift */,
+				C83230A728523C8B00612EB1 /* DataServiceProtocol.swift */,
+				C866C4AF2855B07C00C811F4 /* ErrorHelper.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -583,7 +586,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83230AE28524A4200612EB1 /* CourseModel.swift in Sources */,
-				C83230A828523C8B00612EB1 /* CourseDataLoaderProtocol.swift in Sources */,
+				C83230A828523C8B00612EB1 /* DataServiceProtocol.swift in Sources */,
+				C866C4B02855B07C00C811F4 /* ErrorHelper.swift in Sources */,
 				65E9E1EB270C301A00DDEADC /* ViewController.swift in Sources */,
 				C83230CA285488E600612EB1 /* CourseHomeSmallCollectionViewCell.swift in Sources */,
 				C83230B228524DDC00612EB1 /* CourseDataLoader.swift in Sources */,
