@@ -11,7 +11,6 @@
 		5A6CBF18C76FE99633124049 /* Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7245BB4650F00429A554DFF /* Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework */; };
 		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
 		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
-		65E9E1EB270C301A00DDEADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1EA270C301A00DDEADC /* ViewController.swift */; };
 		65E9E1EE270C301A00DDEADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EC270C301A00DDEADC /* Main.storyboard */; };
 		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
 		65E9E1F3270C301B00DDEADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1F1270C301B00DDEADC /* LaunchScreen.storyboard */; };
@@ -64,7 +63,6 @@
 		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65E9E1EA270C301A00DDEADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65E9E1ED270C301A00DDEADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65E9E1EF270C301B00DDEADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E9E1F2270C301B00DDEADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 				65E9E216270C307D00DDEADC /* data.json */,
 				65E9E1E6270C301A00DDEADC /* AppDelegate.swift */,
 				65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */,
-				65E9E1EA270C301A00DDEADC /* ViewController.swift */,
 				65E9E1EC270C301A00DDEADC /* Main.storyboard */,
 				65E9E1EF270C301B00DDEADC /* Assets.xcassets */,
 				65E9E1F1270C301B00DDEADC /* LaunchScreen.storyboard */,
@@ -566,7 +563,6 @@
 				C83230AE28524A4200612EB1 /* CourseModel.swift in Sources */,
 				C83230A828523C8B00612EB1 /* DataServiceProtocol.swift in Sources */,
 				C866C4B02855B07C00C811F4 /* ErrorHelper.swift in Sources */,
-				65E9E1EB270C301A00DDEADC /* ViewController.swift in Sources */,
 				C83230CA285488E600612EB1 /* CourseHomeSmallCollectionViewCell.swift in Sources */,
 				C83230B228524DDC00612EB1 /* CourseDataLoader.swift in Sources */,
 				C83230BC28545F8000612EB1 /* CourseHomeBigCollectionViewCell.swift in Sources */,
