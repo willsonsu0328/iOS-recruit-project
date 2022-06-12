@@ -99,19 +99,21 @@ class CourseHomeViewController: BaseViewController {
         return collectionView
     }()
 
-    var courseDataLoader = CourseDataLoader()
-
     var courseHomeViewModel = CourseHomeViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = NSLocalizedString("coursehome_title", comment: "")
         refreshContent()
     }
 
     func refreshContent() {
-        courseHomeViewModel.refreshContentSignal.start(Signal<CourseHomeViewModel, Error>.Observer(failed: { _ in
-            // error handling
+        courseHomeViewModel.refreshContentSignal.start(Signal<CourseHomeViewModel, Error>.Observer(failed: { [weak self] error in
+            guard let self = self else { return }
+            let errorAlert = UIAlertController(title: NSLocalizedString("coursehome_erroralerttitle", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
+            errorAlert.addAction(UIAlertAction(title: NSLocalizedString("coursehome_erroralertaction", comment: ""), style: .default))
+            self.navigationController?.present(errorAlert, animated: true, completion: nil)
         }, completed: {
             self.collectionView.reloadData()
         }))

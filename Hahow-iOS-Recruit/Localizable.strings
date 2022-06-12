@@ -6,9 +6,19 @@
   
 */
 
+"coursehome_title" = "Hahow";
 "coursehome_categoryprogramming" = "程式";
 "coursehome_categorydesign" = "設計";
 "coursehome_categorylanguage" = "語言";
 "coursehome_categorymusic" = "音樂";
+"coursehome_erroralerttitle" = "提示";
+"coursehome_erroralertaction" = "確定";
+
+// Error
+
+"error_unknownerror" = "未知的錯誤";
+"error_patherror" = "路徑錯誤";
+"error_dataFailed" = "資料錯誤";
+"error_serverError" = "伺服器錯誤";
 
 
