@@ -48,7 +48,7 @@ class CourseHomeSmallCollectionViewCell: UICollectionViewCell {
 
     func renderView() {
         guard let course = course else { return }
-        imageView.sd_setImage(with: course.coverImageURL)
+        imageView.setImageURLWithDefaultPlaceholderImage(url: course.coverImageURL)
         titleLabel.text = course.title
         detailLabel.text = course.name
     }

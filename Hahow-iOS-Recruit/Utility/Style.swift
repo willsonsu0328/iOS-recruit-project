@@ -21,6 +21,7 @@ extension UIColor {
     static let g_blackColor: UIColor = .black
     static let g_grayColor: UIColor = .gray
     static let g_backgroundColor: UIColor = .white
+    static let g_lightGrayColor: UIColor = .lightGray
 }
 
 extension UIFont {

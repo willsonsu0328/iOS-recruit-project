@@ -37,6 +37,8 @@
 		C83230C72854743300612EB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C83230C62854743300612EB1 /* Localizable.strings */; };
 		C83230CA285488E600612EB1 /* CourseHomeSmallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230C8285488E600612EB1 /* CourseHomeSmallCollectionViewCell.swift */; };
 		C83230CB285488E600612EB1 /* CourseHomeSmallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C83230C9285488E600612EB1 /* CourseHomeSmallCollectionViewCell.xib */; };
+		C866C4AB2855A2BD00C811F4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C866C4AA2855A2BD00C811F4 /* UIImageViewExtension.swift */; };
+		C866C4AD2855A51800C811F4 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C866C4AC2855A51800C811F4 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		C83230C62854743300612EB1 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C83230C8285488E600612EB1 /* CourseHomeSmallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHomeSmallCollectionViewCell.swift; sourceTree = "<group>"; };
 		C83230C9285488E600612EB1 /* CourseHomeSmallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseHomeSmallCollectionViewCell.xib; sourceTree = "<group>"; };
+		C866C4AA2855A2BD00C811F4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		C866C4AC2855A51800C811F4 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		CE953057EF0B99D3E9281965 /* Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests/Pods-Hahow-iOS-Recruit-Hahow-iOS-RecruitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7245BB4650F00429A554DFF /* Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hahow_iOS_Recruit_Hahow_iOS_RecruitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF7071715E5C8E6BB85CD39 /* Pods-Hahow-iOS-RecruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-RecruitTests.release.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 		65E9E1E5270C301A00DDEADC /* Hahow-iOS-Recruit */ = {
 			isa = PBXGroup;
 			children = (
+				C866C4AE2855A82D00C811F4 /* Extensions */,
 				C83230992851B85700612EB1 /* Utility */,
 				C832309B2851B87000612EB1 /* Base */,
 				C832309C2851B87C00612EB1 /* Home */,
@@ -291,6 +296,15 @@
 				C83230C128546D5900612EB1 /* BaseCollectionReusableHeaderView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C866C4AE2855A82D00C811F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C866C4AA2855A2BD00C811F4 /* UIImageViewExtension.swift */,
+				C866C4AC2855A51800C811F4 /* UIImageExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E1DF8D06E31CEAA06D6DF60F /* Pods */ = {
@@ -581,7 +595,9 @@
 				C83230B72854565F00612EB1 /* BaseViewModel.swift in Sources */,
 				C83230A62851B9DF00612EB1 /* Style.swift in Sources */,
 				C83230A42851B8EC00612EB1 /* CourseHomeViewController.swift in Sources */,
+				C866C4AD2855A51800C811F4 /* UIImageExtension.swift in Sources */,
 				C83230B92854567B00612EB1 /* CourseHomeViewModel.swift in Sources */,
+				C866C4AB2855A2BD00C811F4 /* UIImageViewExtension.swift in Sources */,
 				C83230A22851B8CE00612EB1 /* BaseViewController.swift in Sources */,
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
 				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
