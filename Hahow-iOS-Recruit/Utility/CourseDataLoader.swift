@@ -8,24 +8,33 @@
 import UIKit
 import ReactiveSwift
 
-class CourseDataLoader: CourseDataLoaderProtocol {
+class CourseDataLoader: NSObject {
 
     var categoryModels: [CategoryModel] = []
 
-    let fileName: String = "data"
+    var dataService: DataServiceProtocol
 
-    var loadSignal: SignalProducer<CourseDataLoaderProtocol, Error> {
+    init(dataService: DataServiceProtocol) {
+        self.dataService = dataService
+        super.init()
+    }
+
+    var loadSignal: SignalProducer<CourseDataLoader, Error> {
         return SignalProducer { [weak self] observer, _ in
             guard let self = self else { return }
-            let jsonDataHelper = JSONDataHelper(fileName: self.fileName)
-            jsonDataHelper.loadData()
-            guard let data = jsonDataHelper.data else { return }
-            do {
-                let dataModel = try JSONDecoder().decode(DataModel.self, from: data)
-                self.categoryModels = dataModel.categoryModels
-                observer.sendCompleted()
-            } catch let error {
-                observer.send(error: error)
+            self.dataService.loadCourseData { data, error in
+                if let error = error {
+                    observer.send(error: error)
+                }
+                guard let data = data else { return }
+                do {
+                    let dataModel = try JSONDecoder().decode(DataModel.self, from: data)
+                    self.categoryModels = dataModel.categoryModels
+                    observer.sendCompleted()
+                } catch {
+                    // 有需要可再列舉其他錯誤
+                    observer.send(error: error)
+                }
             }
         }
     }

@@ -9,7 +9,6 @@ import UIKit
 
 class JSONDataHelper: NSObject {
 
-    var data: Data?
     private var fileName: String = ""
 
     init(fileName: String = "") {
@@ -17,12 +16,26 @@ class JSONDataHelper: NSObject {
         self.fileName = fileName
     }
 
-    func loadData() {
-        if fileName.count > 0 {
-            guard let path = Bundle.main.path(forResource: fileName, ofType: "json") else { return }
-            let fileURL = URL(fileURLWithPath: path)
-            data = try? Data(contentsOf: fileURL)
+}
+
+extension JSONDataHelper: DataServiceProtocol {
+
+    func loadCourseData(doneHandler: ((Data?, Error?) -> Void)) {
+        guard fileName.count > 0, let path = Bundle.main.path(forResource: fileName, ofType: "json") else {
+            let error: Error = DataServieError.pathError
+            doneHandler(nil, error)
+            return
+        }
+        let fileURL = URL(fileURLWithPath: path)
+        do {
+            let data: Data = try Data(contentsOf: fileURL)
+            doneHandler(data, nil)
+        } catch DecodingError.typeMismatch(_, _) {
+            // 這邊列舉資料的錯誤，可以再擴充
+            let error = DataServieError.dataFailed
+            doneHandler(nil, error)
+        } catch {
+            doneHandler(nil, error)
         }
     }
-
 }

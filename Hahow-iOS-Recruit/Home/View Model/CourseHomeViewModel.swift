@@ -56,7 +56,7 @@ class CourseHomeViewModel: BaseViewModel {
         }
     }
     var filteredCategoryModel: [CategoryModel] = []
-    private let courseDataLoader = CourseDataLoader()
+    private let courseDataLoader = CourseDataLoader(dataService: JSONDataHelper(fileName: "data"))
 
     // MARK: Signals
 
@@ -67,7 +67,7 @@ class CourseHomeViewModel: BaseViewModel {
     var coursesSignal: SignalProducer<CourseHomeViewModel, Error> {
         return SignalProducer { [weak self] observer, _ in
             guard let self = self else { return }
-            self.courseDataLoader.loadSignal.start(Signal<CourseDataLoaderProtocol, Error>.Observer(failed: { error in
+            self.courseDataLoader.loadSignal.start(Signal<CourseDataLoader, Error>.Observer(failed: { error in
                 observer.send(error: error)
             }, completed: {
                 self.categoryModels = self.courseDataLoader.categoryModels
