@@ -8,7 +8,7 @@
 import UIKit
 import ReactiveSwift
 
-class CourseHomeViewModel: BaseViewModel {
+class CourseHomeViewModel: NSObject {
 
     // MARK: Setting
 

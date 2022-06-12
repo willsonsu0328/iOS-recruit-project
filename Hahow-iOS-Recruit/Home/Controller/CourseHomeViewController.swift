@@ -9,7 +9,7 @@ import UIKit
 import ReactiveSwift
 import PureLayout
 
-class CourseHomeViewController: BaseViewController {
+class CourseHomeViewController: UIViewController {
 
     // iPhone layout
     lazy var collectionViewIPhoneLayout: UICollectionViewLayout = {
@@ -105,6 +105,9 @@ class CourseHomeViewController: BaseViewController {
         super.viewDidLoad()
 
         title = NSLocalizedString("coursehome_title", comment: "")
+
+        view.backgroundColor = .g_backgroundColor
+
         refreshContent()
     }
 

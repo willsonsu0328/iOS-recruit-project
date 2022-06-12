@@ -20,7 +20,6 @@
 		65E9E217270C307D00DDEADC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E216270C307D00DDEADC /* data.json */; };
 		B76B19B27F79F3541D728165 /* Pods_Hahow_iOS_RecruitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC82EFE1AC2F33C173B176E /* Pods_Hahow_iOS_RecruitTests.framework */; };
 		C83230982851B70A00612EB1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C83230972851B70A00612EB1 /* .swiftlint.yml */; };
-		C83230A22851B8CE00612EB1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A12851B8CE00612EB1 /* BaseViewController.swift */; };
 		C83230A42851B8EC00612EB1 /* CourseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A32851B8EC00612EB1 /* CourseHomeViewController.swift */; };
 		C83230A62851B9DF00612EB1 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A52851B9DF00612EB1 /* Style.swift */; };
 		C83230A828523C8B00612EB1 /* DataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230A728523C8B00612EB1 /* DataServiceProtocol.swift */; };
@@ -29,7 +28,6 @@
 		C83230B028524AFE00612EB1 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230AF28524AFE00612EB1 /* CategoryModel.swift */; };
 		C83230B228524DDC00612EB1 /* CourseDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230B128524DDC00612EB1 /* CourseDataLoader.swift */; };
 		C83230B42852515500612EB1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230B32852515500612EB1 /* DataModel.swift */; };
-		C83230B72854565F00612EB1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230B62854565F00612EB1 /* BaseViewModel.swift */; };
 		C83230B92854567B00612EB1 /* CourseHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230B82854567B00612EB1 /* CourseHomeViewModel.swift */; };
 		C83230BC28545F8000612EB1 /* CourseHomeBigCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83230BA28545F8000612EB1 /* CourseHomeBigCollectionViewCell.swift */; };
 		C83230BD28545F8000612EB1 /* CourseHomeBigCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C83230BB28545F8000612EB1 /* CourseHomeBigCollectionViewCell.xib */; };
@@ -82,7 +80,6 @@
 		AD04632B3CA4BD8AF2C04CDA /* Pods-Hahow-iOS-RecruitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hahow-iOS-RecruitTests.debug.xcconfig"; path = "Target Support Files/Pods-Hahow-iOS-RecruitTests/Pods-Hahow-iOS-RecruitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADC82EFE1AC2F33C173B176E /* Pods_Hahow_iOS_RecruitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hahow_iOS_RecruitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83230972851B70A00612EB1 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		C83230A12851B8CE00612EB1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C83230A32851B8EC00612EB1 /* CourseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHomeViewController.swift; sourceTree = "<group>"; };
 		C83230A52851B9DF00612EB1 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		C83230A728523C8B00612EB1 /* DataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceProtocol.swift; sourceTree = "<group>"; };
@@ -91,7 +88,6 @@
 		C83230AF28524AFE00612EB1 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		C83230B128524DDC00612EB1 /* CourseDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDataLoader.swift; sourceTree = "<group>"; };
 		C83230B32852515500612EB1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		C83230B62854565F00612EB1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		C83230B82854567B00612EB1 /* CourseHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHomeViewModel.swift; sourceTree = "<group>"; };
 		C83230BA28545F8000612EB1 /* CourseHomeBigCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHomeBigCollectionViewCell.swift; sourceTree = "<group>"; };
 		C83230BB28545F8000612EB1 /* CourseHomeBigCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseHomeBigCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -232,8 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				C83230C028546D0F00612EB1 /* View */,
-				C83230B52854565200612EB1 /* View Model */,
-				C83230A02851B8C000612EB1 /* Controller */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -273,22 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				C83230B82854567B00612EB1 /* CourseHomeViewModel.swift */,
-			);
-			path = "View Model";
-			sourceTree = "<group>";
-		};
-		C83230A02851B8C000612EB1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C83230A12851B8CE00612EB1 /* BaseViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C83230B52854565200612EB1 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				C83230B62854565F00612EB1 /* BaseViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -596,13 +574,11 @@
 				C83230B42852515500612EB1 /* DataModel.swift in Sources */,
 				C83230C228546D5900612EB1 /* BaseCollectionReusableHeaderView.swift in Sources */,
 				C83230AC28523EC800612EB1 /* JSONDataHelper.swift in Sources */,
-				C83230B72854565F00612EB1 /* BaseViewModel.swift in Sources */,
 				C83230A62851B9DF00612EB1 /* Style.swift in Sources */,
 				C83230A42851B8EC00612EB1 /* CourseHomeViewController.swift in Sources */,
 				C866C4AD2855A51800C811F4 /* UIImageExtension.swift in Sources */,
 				C83230B92854567B00612EB1 /* CourseHomeViewModel.swift in Sources */,
 				C866C4AB2855A2BD00C811F4 /* UIImageViewExtension.swift in Sources */,
-				C83230A22851B8CE00612EB1 /* BaseViewController.swift in Sources */,
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
 				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
 			);
