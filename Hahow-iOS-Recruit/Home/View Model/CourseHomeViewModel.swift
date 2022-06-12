@@ -62,17 +62,18 @@ class CourseHomeViewModel: NSObject {
     // MARK: Signals
 
     // 多建立一個 refreshContentSignal，方便之後擴充，不用更改 controller
-    var refreshContentSignal: SignalProducer<CourseHomeViewModel, Error> {
+    var refreshContentSignal: SignalProducer<Void, Error> {
         return coursesSignal
     }
 
-    var coursesSignal: SignalProducer<CourseHomeViewModel, Error> {
+    var coursesSignal: SignalProducer<Void, Error> {
         return SignalProducer { [weak self] observer, _ in
             guard let self = self else { return }
-            self.courseDataLoader.loadSignal.start(Signal<CourseDataLoader, Error>.Observer(failed: { error in
+            self.courseDataLoader.loadSignal.start(Signal<[CategoryModel], Error>.Observer(value: { categoryModels in
+                self.categoryModels = categoryModels
+            }, failed: { error in
                 observer.send(error: error)
             }, completed: {
-                self.categoryModels = self.courseDataLoader.categoryModels
                 observer.sendCompleted()
             }))
         }

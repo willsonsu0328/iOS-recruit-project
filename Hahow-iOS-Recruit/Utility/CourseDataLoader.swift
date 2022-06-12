@@ -11,8 +11,6 @@ import ReactiveSwift
 // 負責處理課程相關資料的來源
 class CourseDataLoader: NSObject {
 
-    var categoryModels: [CategoryModel] = []
-
     var dataService: DataServiceProtocol
 
     init(dataService: DataServiceProtocol) {
@@ -20,17 +18,21 @@ class CourseDataLoader: NSObject {
         super.init()
     }
 
-    var loadSignal: SignalProducer<CourseDataLoader, Error> {
+    var loadSignal: SignalProducer<[CategoryModel], Error> {
         return SignalProducer { [weak self] observer, _ in
             guard let self = self else { return }
             self.dataService.loadCourseData { data, error in
                 if let error = error {
                     observer.send(error: error)
                 }
-                guard let data = data else { return }
+                guard let data = data else {
+                    let error = DataServieError.dataFailed
+                    observer.send(error: error)
+                    return
+                }
                 do {
                     let dataModel = try JSONDecoder().decode(DataModel.self, from: data)
-                    self.categoryModels = dataModel.categoryModels
+                    observer.send(value: dataModel.categoryModels)
                     observer.sendCompleted()
                 } catch {
                     // 有需要可再列舉其他錯誤

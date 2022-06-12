@@ -112,12 +112,13 @@ class CourseHomeViewController: UIViewController {
     }
 
     func refreshContent() {
-        courseHomeViewModel.refreshContentSignal.start(Signal<CourseHomeViewModel, Error>.Observer(failed: { [weak self] error in
+        courseHomeViewModel.refreshContentSignal.start(Signal<Void, Error>.Observer(failed: { [weak self] error in
             guard let self = self else { return }
             let errorAlert = UIAlertController(title: NSLocalizedString("coursehome_erroralerttitle", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
             errorAlert.addAction(UIAlertAction(title: NSLocalizedString("coursehome_erroralertaction", comment: ""), style: .default))
             self.navigationController?.present(errorAlert, animated: true, completion: nil)
-        }, completed: {
+        }, completed: { [weak self] in
+            guard let self = self else { return }
             self.collectionView.reloadData()
         }))
     }
