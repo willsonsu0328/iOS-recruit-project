@@ -7,10 +7,7 @@
 
 import UIKit
 
-class Style: NSObject {
-
-    // 在此可定義整體 app 的 style，例如 Navigation bar
-
+enum Style {
     // 整體 app 間距設定
     static let lSpace: CGFloat = 15.0
     static let mSpace: CGFloat = 12.0
