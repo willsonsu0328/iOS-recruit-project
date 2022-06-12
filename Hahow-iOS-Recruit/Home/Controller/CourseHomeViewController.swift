@@ -163,14 +163,13 @@ extension CourseHomeViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        if kind == UICollectionView.elementKindSectionHeader {
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: BaseCollectionReusableHeaderView.reuseIdentifier, for: indexPath)
-            if let headerView = headerView as? BaseCollectionReusableHeaderView {
-                headerView.title = courseHomeViewModel.filteredCategoryModel[indexPath.section].categoryType.title
-                return headerView
-            }
+
+        if kind == UICollectionView.elementKindSectionHeader, let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: BaseCollectionReusableHeaderView.reuseIdentifier, for: indexPath) as? BaseCollectionReusableHeaderView {
+            headerView.title = courseHomeViewModel.filteredCategoryModel[indexPath.section].categoryType.title
+            return headerView
         }
         return UICollectionReusableView()
+
     }
 
 }
