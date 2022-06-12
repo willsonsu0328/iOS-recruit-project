@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CategoryModel: Codable {
+struct CategoryModel: Codable {
 
     enum CategoryType: String, Codable {
         case undefined = ""
@@ -40,7 +40,6 @@ class CategoryModel: Codable {
 
     var courses: [CourseModel] { _courses ?? [] }
     var categoryType: CategoryType { _categoryType ?? .undefined}
-    var filterCourses: [CourseModel] = []
 
     enum CodingKeys: String, CodingKey {
         case _courses = "courses"

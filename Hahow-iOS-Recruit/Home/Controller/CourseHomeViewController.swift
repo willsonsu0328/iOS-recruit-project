@@ -143,25 +143,27 @@ class CourseHomeViewController: UIViewController {
 extension CourseHomeViewController: UICollectionViewDataSource {
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        courseHomeViewModel.filteredCategoryModel.count
+        courseHomeViewModel.categoryModels.count
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        courseHomeViewModel.filteredCategoryModel[section].filterCourses.count
+        courseHomeViewModel.displayItemCount(for: section)
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let categoryModel = courseHomeViewModel.filteredCategoryModel[indexPath.section]
+        let categoryModel = courseHomeViewModel.categoryModels[indexPath.section]
 
-        if courseHomeViewModel.cellType(for: indexPath) == .bigCell, let bigCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeBigCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeBigCollectionViewCell {
+        let cellType = courseHomeViewModel.cellType(for: indexPath)
 
-            bigCell.course = categoryModel.filterCourses[indexPath.item]
+        if cellType == .bigCell, let bigCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeBigCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeBigCollectionViewCell {
+
+            bigCell.course = categoryModel.courses[indexPath.item]
             return bigCell
 
-        } else if courseHomeViewModel.cellType(for: indexPath) == .smallCell, let smallCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeSmallCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeSmallCollectionViewCell {
+        } else if cellType == .smallCell, let smallCell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseHomeSmallCollectionViewCell.reuseIdentifier, for: indexPath) as? CourseHomeSmallCollectionViewCell {
 
-            smallCell.course = categoryModel.filterCourses[indexPath.item]
+            smallCell.course = categoryModel.courses[indexPath.item]
 
             return smallCell
         }
@@ -172,7 +174,7 @@ extension CourseHomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 
         if kind == UICollectionView.elementKindSectionHeader, let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: BaseCollectionReusableHeaderView.reuseIdentifier, for: indexPath) as? BaseCollectionReusableHeaderView {
-            headerView.title = courseHomeViewModel.filteredCategoryModel[indexPath.section].categoryType.title
+            headerView.title = courseHomeViewModel.categoryModels[indexPath.section].categoryType.title
             return headerView
         }
         return UICollectionReusableView()

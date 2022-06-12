@@ -41,22 +41,27 @@ class CourseHomeViewModel: NSObject {
         return cellType
     }
 
+    private let maxDisplayItemsForIPhone: Int = 3
+    private let maxDisplayItemsForIPad: Int = 4
+
+    // 處理課程顯示數量
+    func displayItemCount(for section: Int) -> Int {
+        var count: Int = 0
+        let courses = categoryModels[section].courses
+        switch currentDeviceModel {
+        case .phone:
+            count = (courses.count >= maxDisplayItemsForIPhone) ? maxDisplayItemsForIPhone : courses.count
+        case .pad:
+            count = (courses.count >= maxDisplayItemsForIPad) ? maxDisplayItemsForIPad : courses.count
+        default:
+            break
+        }
+        return count
+    }
+
     // MARK: Storage
 
-    var categoryModels: [CategoryModel] = [] {
-        didSet {
-            filteredCategoryModel = categoryModels
-            switch currentDeviceModel {
-            case .phone:
-                filterCategoryModels(prefix: 3)
-            case .pad:
-                filterCategoryModels(prefix: 4)
-            default:
-                break
-            }
-        }
-    }
-    var filteredCategoryModel: [CategoryModel] = []
+    var categoryModels: [CategoryModel] = []
     private let courseDataLoader = CourseDataLoader(dataService: JSONDataHelper(fileName: "data"))
 
     // MARK: Signals
@@ -76,19 +81,6 @@ class CourseHomeViewModel: NSObject {
             }, completed: {
                 observer.sendCompleted()
             }))
-        }
-    }
-
-    // MARK: Helper
-
-    // 處理課程資料顯示數量
-    func filterCategoryModels(prefix: Int) {
-        for categoryModel in filteredCategoryModel {
-            if categoryModel.courses.count > prefix {
-                categoryModel.filterCourses = Array(categoryModel.courses.prefix(prefix))
-            } else {
-                categoryModel.filterCourses = categoryModel.courses
-            }
         }
     }
 

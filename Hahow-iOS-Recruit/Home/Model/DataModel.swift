@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DataModel: Codable {
+struct DataModel: Codable {
 
     private let _categoryModels: [CategoryModel]?
 
