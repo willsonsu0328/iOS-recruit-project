@@ -1,5 +1,6 @@
 # iOS-recruit-project
 Hahow iOS Engineer 面試小專案
+
 ### 環境
 
 * 語言：Swift
@@ -39,5 +40,35 @@ Hahow iOS Engineer 面試小專案
   * 定義資料錯誤及描述
 * Style
   * 定義整體 App 的顏色、字體、間距等
+
+### 介面設計
+
+* 使用 CollectionView、Compositional Layout
+* 考量到 iPad 分割畫面，分兩種 CollectionViewLayout 處理
+
+### 畫面呈現
+
+* iPhone
+
+ ![iPhone 12](https://user-images.githubusercontent.com/12155964/173267891-8bbbf0ea-50e3-4481-b700-bf87f771d6f5.gif)
+ 
+* iPad 直向
+
+![iPad Pro (9 7-inch) - portrait](https://user-images.githubusercontent.com/12155964/173268283-8315b9e8-07ac-412a-8b6c-bcf530107be8.gif)
+
+* iPad 橫向
+
+![iPad Pro (9 7-inch) - landscape](https://user-images.githubusercontent.com/12155964/173267869-a733a102-cec1-4845-bf4c-2839a45e2515.gif)
+
+* iPad 直向分割畫面
+
+![iPad Pro (9 7-inch) - portrait_multitasking](https://user-images.githubusercontent.com/12155964/173267944-3763d58a-49dc-46ac-a410-596090f0647d.gif)
+
+* iPad 橫向分割畫面
+
+![ iPad Pro (9 7-inch) - landscape_multitasking ](https://user-images.githubusercontent.com/12155964/173267958-74757d7d-c507-4b5c-812e-af86b99f631f.gif)
+
+
+
 
 
