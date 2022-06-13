@@ -50,25 +50,21 @@ Hahow iOS Engineer 面試小專案
 
 #### iPhone
 
- ![iPhone 12](https://user-images.githubusercontent.com/12155964/173267891-8bbbf0ea-50e3-4481-b700-bf87f771d6f5.gif)
+![iPhone 12](https://user-images.githubusercontent.com/12155964/173270970-0190bda1-867d-4beb-b61b-230ffeaebc2a.gif)
  
 #### iPad 直向
 
-![iPad Pro (9 7-inch) - portrait](https://user-images.githubusercontent.com/12155964/173268283-8315b9e8-07ac-412a-8b6c-bcf530107be8.gif)
+![iPad Pro (9 7-inch) - portrait](https://user-images.githubusercontent.com/12155964/173270993-a0671c48-a430-4fca-9836-c2790dcfa5c5.gif)
 
 #### iPad 橫向
 
-![iPad Pro (9 7-inch) - landscape](https://user-images.githubusercontent.com/12155964/173269094-fbc26db0-dd8e-4f61-8167-ea459646f72d.gif)
+![iPad Pro (9 7-inch) - landscape](https://user-images.githubusercontent.com/12155964/173271021-3bd42444-92c0-442a-b021-5b7539c568fa.gif)
 
 #### iPad 直向分割畫面
 
-![iPad Pro (9 7-inch) - portrait_multitasking](https://user-images.githubusercontent.com/12155964/173267944-3763d58a-49dc-46ac-a410-596090f0647d.gif)
+![iPad Pro (9 7-inch) - portrait_multitasking](https://user-images.githubusercontent.com/12155964/173271048-0cb6dc0c-4407-4df3-a406-73660c1e7b32.gif)
 
 #### iPad 橫向分割畫面
 
-![ iPad Pro (9 7-inch) - landscape_multitasking ](https://user-images.githubusercontent.com/12155964/173267958-74757d7d-c507-4b5c-812e-af86b99f631f.gif)
-
-
-
-
+![ iPad Pro (9 7-inch) - landscape_multitasking ](https://user-images.githubusercontent.com/12155964/173271079-d0d897dd-e161-4fe6-947f-73ca2b565ba9.gif)
 
