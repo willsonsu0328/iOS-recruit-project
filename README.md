@@ -48,23 +48,23 @@ Hahow iOS Engineer 面試小專案
 
 ### 畫面呈現
 
-* iPhone
+#### iPhone
 
  ![iPhone 12](https://user-images.githubusercontent.com/12155964/173267891-8bbbf0ea-50e3-4481-b700-bf87f771d6f5.gif)
  
-* iPad 直向
+#### iPad 直向
 
 ![iPad Pro (9 7-inch) - portrait](https://user-images.githubusercontent.com/12155964/173268283-8315b9e8-07ac-412a-8b6c-bcf530107be8.gif)
 
-* iPad 橫向
+#### iPad 橫向
 
-![iPad Pro (9 7-inch) - landscape](https://user-images.githubusercontent.com/12155964/173267869-a733a102-cec1-4845-bf4c-2839a45e2515.gif)
+![iPad Pro (9 7-inch) - landscape](https://user-images.githubusercontent.com/12155964/173269094-fbc26db0-dd8e-4f61-8167-ea459646f72d.gif)
 
-* iPad 直向分割畫面
+#### iPad 直向分割畫面
 
 ![iPad Pro (9 7-inch) - portrait_multitasking](https://user-images.githubusercontent.com/12155964/173267944-3763d58a-49dc-46ac-a410-596090f0647d.gif)
 
-* iPad 橫向分割畫面
+#### iPad 橫向分割畫面
 
 ![ iPad Pro (9 7-inch) - landscape_multitasking ](https://user-images.githubusercontent.com/12155964/173267958-74757d7d-c507-4b5c-812e-af86b99f631f.gif)
 
