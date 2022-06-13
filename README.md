@@ -62,9 +62,10 @@ Hahow iOS Engineer 面試小專案
 
 #### iPad 直向分割畫面
 
-![iPad Pro (9 7-inch) - portrait_multitasking](https://user-images.githubusercontent.com/12155964/173271048-0cb6dc0c-4407-4df3-a406-73660c1e7b32.gif)
+![iPad Pro (9 7-inch) - portrait_multitasking](https://user-images.githubusercontent.com/12155964/173273036-15cb1d3b-25dc-41cb-828b-4c218adeb43c.gif)
 
 #### iPad 橫向分割畫面
 
-![ iPad Pro (9 7-inch) - landscape_multitasking ](https://user-images.githubusercontent.com/12155964/173271079-d0d897dd-e161-4fe6-947f-73ca2b565ba9.gif)
+![iPad Pro (9 7-inch) - landscape_multitasking](https://user-images.githubusercontent.com/12155964/173273056-08943575-848e-4e6c-9069-93d4937ab747.gif)
+
 
